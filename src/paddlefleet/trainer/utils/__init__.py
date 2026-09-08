@@ -18,22 +18,27 @@ from typing import TYPE_CHECKING
 from ...utils.lazy_import import _LazyModule
 
 import_structure = {
-    "ckpt_converter": ["get_rank_to_read_files", "flatten_state_dict", "CheckpointConverter"],
+    "ckpt_converter": [
+        "get_rank_to_read_files",
+        "flatten_state_dict",
+        "CheckpointConverter",
+    ],
     "doc": ["add_start_docstrings"],
     "helper": [],
     "reshard": [],
     "async_save": [],
+    "flex_async_save": [],
     "zero_cost_checkpoint": [],
     "sharding_io": [],
 }
 
 if TYPE_CHECKING:
     from .doc import (
-        add_end_docstrings,
-        add_start_docstrings,
-        add_start_docstrings_to_model_forward,
+        add_end_docstrings as add_end_docstrings,
+        add_start_docstrings as add_start_docstrings,
+        add_start_docstrings_to_model_forward as add_start_docstrings_to_model_forward,
     )
-    from .helper import *
+    from .helper import *  # noqa: F403
 else:
     sys.modules[__name__] = _LazyModule(
         __name__,
