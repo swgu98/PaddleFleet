@@ -256,8 +256,8 @@ DEFAULT_CALLBACKS = [DefaultFlowCallback]
 DEFAULT_PROGRESS_CALLBACK = ProgressCallback
 
 if is_datasets_available():
-    PADDLEFORMERS_TESTING = os.environ.get("PADDLEFORMERS_TESTING", False)
-    if "torch" not in sys.modules and not PADDLEFORMERS_TESTING:
+    PADDLEFLEET_TESTING = os.environ.get("PADDLEFLEET_TESTING", False)
+    if "torch" not in sys.modules and not PADDLEFLEET_TESTING:
         sys.modules["torch"] = None
         import datasets
 

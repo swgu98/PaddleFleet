@@ -21,6 +21,8 @@ arange = "arange"
 astroid = 'astroid'
 cacl = 'cacl'
 CANN = 'CANN'
+# Legacy misspelling in PaddleFormers-derived comments and identifiers
+checpoint = 'checpoint'
 Clas = 'Clas'
 clen = 'clen'
 datas = 'datas'
@@ -28,6 +30,8 @@ dota = 'dota'
 dout = "dout"
 entrys = 'entrys'
 feeded = 'feeded'
+# Part of the Paddle GradScaler attribute name `_cache_founf_inf`
+founf = 'founf'
 grad = "grad"
 Halfs = 'Halfs'
 kinf = 'kinf'
@@ -35,6 +39,8 @@ kinf = 'kinf'
 Matix = 'Matix'
 operants = 'operants'
 Optin = 'Optin'
+# Legacy misspelling in PaddleFormers-derived identifiers
+optimzier = 'optimzier'
 padd = 'padd'
 pash = 'pash'
 setp = 'setp'
