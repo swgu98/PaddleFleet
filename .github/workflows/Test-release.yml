@@ -1599,7 +1599,6 @@ jobs:
       - name: filter coverage files and remove backup files
         if: always()
         run: |
-
           COVERAGE_FILES=(
             "multi_coverage.xml"
             "single_coverage.xml"
